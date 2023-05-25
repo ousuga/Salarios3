@@ -1,0 +1,22 @@
+---
+title: "Análisis de datos de salarios"
+author: "RLadies Medellín"
+format: html
+editor: visual
+---
+
+## Resumen de datos 
+
+Análisis de datos de salarios de ciencia de datos. 
+
+```{r, echo = FALSE}
+library(readr)
+salarios_ <- read_delim("data/ds_salaries.csv", 
+    delim = ";", escape_double = FALSE, col_types = cols(work_year = col_character(), 
+        remote_ratio = col_character()), 
+    trim_ws = TRUE)
+
+summary(salarios)
+```
+
+
