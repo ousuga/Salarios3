@@ -1,2 +1,2 @@
 # Salarios3
-Ejemplo
+Ejemplo de análisis de salarios 
